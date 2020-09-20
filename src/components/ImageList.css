@@ -1,0 +1,13 @@
+.image-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); /* tells CSS to automatically figure out how many 
+                                                                columns need to be added. Minimum width of column is 250px and max width is 1FR which is short of fraction. 
+                                                                1FR means 100% of container space, 2Fr means 2 elements taking 50% of 
+                                                                container space and so on*/
+    grid-column-gap:10px;        /* Gap b/w each column to allow some spacing */ 
+    grid-auto-rows: 10px;       /* automatically figure out no. of rows required to render content on grid. */
+}
+
+.image-list img{
+    width:250px;
+}
